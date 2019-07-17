@@ -35,7 +35,15 @@
 // because the remainder of 6 / 3 is 0
 // i % z is the remainder of "i" divided by "z"
 //modulo is the remainder of the division of two numbers
-// 
+//
+//Order: It's on top because if you put it on the bottom, 
+//then you will never print Fizzbuzz since the other two 
+//conditional statements are also checking for i being divisible by 3 or 5
+
+//The program should only choose one conditional statement to print each time, 
+//and it will choose only the first one that is correct
+
+
 int fizzbuzz(int n)
 {
     int counter = 0;

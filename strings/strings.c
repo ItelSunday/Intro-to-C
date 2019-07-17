@@ -13,19 +13,20 @@
 // ./strings
 //---------------------------------------//
 
-//Add a counter i++
+//Add a counter
 
 int string_length(char *s)
 {
     int counter = 0;
-    while (s[counter] != '\0')
+    while (s[counter] != '\0') //loop through the string array s, 
+    //if the current letter inside the string array is not /0, 
+    //then keep going to the next letter
     {
         counter +=1;
     }
 
     return counter;
     
-
 }
 /*
     Write a function that reverses the order of string s and outputs 
@@ -35,7 +36,23 @@ int string_length(char *s)
 */
 char *reverse_string(char *rv, char *s)
 {
-// i--
+    int length = string_length(s);
+    int counter = 0;
+    //Traversing string from end
+    for (int i = length-1; i >= 0; i--){
+        rv[counter] = s[i];
+        counter++;
+
+    }
+    return rv;
+    // int counter = 0;
+
+    // for(int i = s - 1; i>= 0; i--){
+    //     rv[counter] = s[i];
+    //     counter++;
+    // }
+    // return rv;
+
 
 }
 
