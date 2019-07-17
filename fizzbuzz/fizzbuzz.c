@@ -22,7 +22,7 @@
 // i++ every time that nothing gets printed and return counter
 //---------------------------------------//
 
-//---------------------------------------//
+
 //---------RUN IN THE TERMINAL-----------//
 // gcc -Wall -Wextra -o fizzbuzz fizzbuzz.c then,
 // ./fizzbuzz
@@ -38,6 +38,9 @@
 // 
 int fizzbuzz(int n)
 {
+    int counter = 0;
+    int i;
+    
     for(int i=0; i<n; i++) {
         if(i%3 == 0 && i%5 == 0) {
 			printf("%d FizzBuzz\n", i);
@@ -47,10 +50,11 @@ int fizzbuzz(int n)
         }
         else if(i%5 == 0){
             printf("%i Buzz\n", i);
-
-		}  
+		} else {
+            counter += 1;
+        }
     }
-    return 0;
+    return counter;
 }
 
 #ifndef TESTING

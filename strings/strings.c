@@ -7,11 +7,26 @@
     
     Do not just use the `strlen` function from the standard libary.
 */
+
+//---------RUN IN THE TERMINAL-----------//
+// gcc -Wall -Wextra -o strings strings.c then,
+// ./strings
+//---------------------------------------//
+
+//Add a counter i++
+
 int string_length(char *s)
 {
+    int counter = 0;
+    while (s[counter] != '\0')
+    {
+        counter +=1;
+    }
+
+    return counter;
+    
 
 }
-
 /*
     Write a function that reverses the order of string s and outputs 
     the reversed string to the input array rv. The rv array will have 
@@ -20,6 +35,7 @@ int string_length(char *s)
 */
 char *reverse_string(char *rv, char *s)
 {
+// i--
 
 }
 
