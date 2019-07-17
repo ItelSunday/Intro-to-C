@@ -42,17 +42,8 @@ char *reverse_string(char *rv, char *s)
     for (int i = length-1; i >= 0; i--){
         rv[counter] = s[i];
         counter++;
-
     }
     return rv;
-    // int counter = 0;
-
-    // for(int i = s - 1; i>= 0; i--){
-    //     rv[counter] = s[i];
-    //     counter++;
-    // }
-    // return rv;
-
 
 }
 
