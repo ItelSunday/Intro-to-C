@@ -22,7 +22,8 @@ int string_length(char *s)
     //if the current letter inside the string array is not /0, 
     //then keep going to the next letter
     {
-        counter +=1;
+        counter +=1; //we increment counter because we use it to access different
+        // items inside of the string array
     }
 
     return counter;
@@ -39,6 +40,7 @@ char *reverse_string(char *rv, char *s)
     int length = string_length(s);
     int counter = 0;
     //Traversing string from end
+
     for (int i = length-1; i >= 0; i--){
         rv[counter] = s[i];
         counter++;
