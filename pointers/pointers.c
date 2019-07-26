@@ -16,12 +16,12 @@
 */
 void string_copy(char *x, char *y)
 {
-    while(*y != '\0'){
-        *x = *y;
-        y++;
-        x++;
+    while(*y != '\0'){ //While the pointer value is not null
+        *x = *y; //dereferencing x to y
+        y++; //increment y by 1
+        x++; //increments by 1 by size of char it points to next adjacent char?
     }
-    *x = '\0';
+    *x = '\0'; //x points to a null terminator to end it
 }
 
 
