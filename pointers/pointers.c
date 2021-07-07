@@ -7,16 +7,24 @@
     at its end to terminate it properly. 
 
     Example call:
-
+    --declare a buffer 
     char buffer[1024];
 
+    --Then pass that into string_copy:
     string_copy(buffer, "Hello!");
     printf("%s", buffer); // Prints "Hello!"
 */
 void string_copy(char *x, char *y)
 {
-
+    while(*y != '\0'){ //While the pointer value is not null
+        *x = *y; //dereferencing x to y
+        y++; //increment y by 1
+        x++; //increments by 1 by size of char it points to next adjacent char?
+    }
+    *x = '\0'; //x points to a null terminator to end it
 }
+
+
 
 /*
     Searches the input string `str` for the first instance of the 
@@ -28,6 +36,17 @@ void string_copy(char *x, char *y)
 */
 char *find_char(char *str, char c)
 {
+
+    while (*str != '\0'){
+        if (*str == c)
+        {
+            return str;
+        }
+        str++;
+        
+    }
+    return 0;
+    
 
 }
 

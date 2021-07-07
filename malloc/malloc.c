@@ -12,7 +12,7 @@
 */
 char *string_dup(char *src)
 {
-
+//make new space
 }
 
 /*
